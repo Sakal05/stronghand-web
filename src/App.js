@@ -1,6 +1,6 @@
 
 import './App.css';
-import React, { useState } from 'react';
+import React, { useState, ReactPropTypes } from 'react';
 import { Route, Routes, useLocation, useNavigate, useRoutes } from "react-router-dom"
 import "primereact/resources/themes/lara-light-indigo/theme.css";  //theme
 import "primereact/resources/primereact.min.css";                  //core css
@@ -166,7 +166,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/' element={<Body />} />
         <Route path='/blog' element={<Blog />} />
-        <Route path='/blog/blog-detail/:id' element={<BlogDetail />} />
+        <Route path='/blog/blog-detail' element={<BlogDetail />} />
       </Routes>
     </>
   );

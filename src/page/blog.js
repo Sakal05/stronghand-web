@@ -19,7 +19,7 @@ export default function Blog() {
         ]
     return (
         <div>
-            {data.data.map((item, index) => 
+            {data.data.map(item => 
                 <div className='flex align-items-center justify-content-between mt-8 text-color'>
                     <div className='m-2'>
 
